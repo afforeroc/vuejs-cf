@@ -1,0 +1,5 @@
+applications:
+- name: vuejs-cf-demo-2019-02-27
+  memory: 64M
+  buildpack: staticfile_buildpack
+  path: dist
