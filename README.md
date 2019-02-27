@@ -12,7 +12,11 @@ Este tutorial te indicará como desplegar una aplicación web de `Vue.js` sobre 
 * Editor de texto/código como `Notepad++` o `Visual Studio Code`
 * Cuenta activa de [IBM Cloud](https://console.bluemix.net)
 
-## 1. Opción A: Crear, probar y configurar la aplicación web
+## 1. Opción A: Clonar el repositorio
+Al descargar este repositorio, la aplicación `vuejs-cf` tendrá los archivos de configuración para el despliegue
+* Clona este repositorio localmente: `$ git clone https://github.com/afforeroc/vuejs-cf`
+
+## 2. Opción B: Crear, probar y configurar la aplicación web
 
 ### Instalar Node.js y Vue.js
 * Instala la última versión de [Node.js](https://nodejs.org/en/)
@@ -23,12 +27,12 @@ Este tutorial te indicará como desplegar una aplicación web de `Vue.js` sobre 
 
 ### Crear y probar la aplicación web
 * Crea la aplicación: `$ vue create vuejs-cf`
-* Accede a la carpeta del proyecto: `$ cd create vuejs-cf`
+* Accede a la carpeta del proyecto: `$ cd vuejs-cf`
 * Prueba la aplicación en localhost: `$ npm run serve`
 * Detén la aplicación: `(Ctrl + C)`
 
 ### Configurar la aplicación para el despliegue
-Desde la carpeta raíz del proyecto
+Desde la carpeta raíz de la applicación
 * Construye la aplicación: `$ npm run build`
 * Ingresa a la carpeta generada `dist` y crea el archivo vacío `staticfile`
 * Posiciónate de nuevo en la carpeta raíz del proyecto, crea el archivo `manifest.yml` y editalo con la siguiente información:
@@ -40,10 +44,6 @@ applications:
   buildpack: staticfile_buildpack
   path: dist/
 ``` 
-
-## 1. Opción B: Clonar el repositorio
-Al clonar este repositorio, la aplicación `vuejs-cf` tendrá los archivos de configuración para el despliegue
-* Descarga/clona este repositorio localmente: `$ git clone https://github.com/afforeroc/vuejs-cf`
 
 ## 2. Instalar IBM Cloud CLI
 Instala según tu sistema operativo
