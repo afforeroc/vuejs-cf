@@ -19,12 +19,13 @@ Este tutorial te indicará como configurar una aplicación web de `Vue.js` para 
 * Crea la aplicación web: `$ vue create vuejs-cf`
 * Accede a la carpeta raíz de la aplicación: `$ cd vuejs-cf`
 * Prueba la aplicación en localhost: `$ npm run serve`
+> Abre una pestaña en tu navegador web en `localhost:8080`
 * Detén la aplicación: `(Ctrl + C)`
 
 ### 3. Configurar la aplicación para el despliegue
 Desde la carpeta raíz de la aplicación
 * Construye la aplicación: `$ npm run build`
-* Ingresa a la carpeta generada `dist\` y crea el archivo vacío `staticfile` (sin extensión)
+* Ingresa a la carpeta generada `dist\` y crea el archivo vacío sin extensión `staticfile`
 * Posiciónate de nuevo en la carpeta raíz del proyecto, crea el archivo `manifest.yml` y editalo con la siguiente información:
 ```
 ---
