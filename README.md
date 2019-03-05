@@ -1,4 +1,4 @@
-# Configurar una aplicación web de Vue.js para su despliegue en Cloud Foundry
+# Configurar una aplicación web de Vue.js para desplegarla en Cloud Foundry
 
 Este tutorial te indicará como configurar una aplicación web de `Vue.js` para desplegarla en Cloud Foundry. 
 
