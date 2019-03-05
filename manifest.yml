@@ -1,5 +1,7 @@
+---
 applications:
-- name: vuejs-cf-demo-2019-02-27
+- name: vuejs-cf-<initials>-<date>
   memory: 64M
   buildpack: staticfile_buildpack
-  path: dist
+  path: dist/
+``` 
