@@ -35,7 +35,7 @@ applications:
   path: dist/
 ```
 
-## 4. Colocar un nombre a la aplicación
+### 4. Colocar un nombre a la aplicación
 * Dentro del archivo `manifest.yml`, cambia el valor del atributo `- name` colocando un nombre **único**. Puedes usar la plantilla para colocar tus iniciales y la fecha de hoy.
 
 ## Links de referencia
