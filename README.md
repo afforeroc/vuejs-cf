@@ -24,7 +24,7 @@ Este tutorial te indicará como configurar una aplicación web de `Vue.js` para 
 ### 3. Configurar la aplicación para el despliegue
 Desde la carpeta raíz de la aplicación
 * Construye la aplicación: `$ npm run build`
-* Ingresa a la carpeta generada `dist` y crea el archivo vacío `staticfile`
+* Ingresa a la carpeta generada `dist\` y crea el archivo vacío `staticfile` (sin extensión)
 * Posiciónate de nuevo en la carpeta raíz del proyecto, crea el archivo `manifest.yml` y editalo con la siguiente información:
 ```
 ---
