@@ -1,6 +1,6 @@
-# Configurar una aplicación web de Vue.js para desplegarla en Cloud Foundry
+# Configurar una aplicación web de Vue para desplegarla en Cloud Foundry
 
-Este tutorial te indicará como configurar una aplicación web de `Vue.js` para desplegarla en Cloud Foundry. 
+Este tutorial te indicará como configurar una aplicación web de `Vue` para desplegarla en Cloud Foundry. 
 
 * Nota: Al descargar este repositorio, la aplicación tendrá los archivos de configuración para el despliegue, pero es necesario que realices el paso 4.
 
@@ -8,16 +8,16 @@ Este tutorial te indicará como configurar una aplicación web de `Vue.js` para 
 * Ventana de comandos como `Terminal` o `PowerShell`
 * Editor de texto/código como `Notepad++` o `Visual Studio Code`
 
-### 1. Instalar Node.js y Vue.js
+### 1. Instalar Node.js y Vue
 * Instala la última versión de [Node.js](https://nodejs.org/en/)
-* Verifica la instalación de Node.js: `$ node --version`
+* Verifica la instalación de Node: `$ node --version`
 * Verifica la instalación de NPM: `$ npm --version`
-* Instala la última versión del CLI de Vue.js: `$ npm install -g @vue/cli`
-* Verifica la instalación de Vue.js: `$ vue --version`
+* Instala la última versión del CLI de Vue: `$ npm install -g @vue/cli`
+* Verifica la instalación de Vue: `$ vue --version`
 
 ### 2. Crear y probar la aplicación web
-* Crea la aplicación web: `$ vue create vuejs-cf`
-* Accede a la carpeta raíz de la aplicación: `$ cd vuejs-cf`
+* Crea la aplicación web: `$ vue create vue-app`
+* Accede a la carpeta raíz de la aplicación: `$ cd vue-app`
 * Prueba la aplicación en localhost: `$ npm run serve`
 > Abre tu navegador web en `localhost:8080`
 * Detén la aplicación: `(Ctrl + C)`
@@ -30,7 +30,7 @@ Desde la carpeta raíz de la aplicación
 ```
 ---
 applications:
-- name: vuejs-cf-<initials>-<date>
+- name: vue-app-<initials>-<date>
   memory: 64M
   buildpack: staticfile_buildpack
   path: dist/
