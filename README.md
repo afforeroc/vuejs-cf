@@ -10,41 +10,63 @@
 * Install the latest version of [Node.js](https://nodejs.org/en/)
 
 * Verify the Node.js installation
-```node --version```
+```
+node --version
+```
 
 * Verify the NPM installation
-```npm --version```
+```
+npm --version
+```
 
 * Install the lastest version of Vue CLI
-`npm install -g @vue/cli`
+```
+npm install -g @vue/cli
+```
 
 * Verify the Vue version
-```vue --version```
+```
+vue --version
+```
 
 > If you can't see the Vue version on PowerShell, launch a PowerShell window run as an administrator and enter
-```Set-ExecutionPolicy Unrestricted```
+```
+Set-ExecutionPolicy Unrestricted
+```
 and finally verify the Vue version
 
 ### 2. Create and check the web app
 * Create the web app
-```vue create vue-app```
+```
+vue create vue-app
+```
 
 * Access the root folder of web app
-```cd vue-app```
+```
+cd vue-app
+```
 
 * Run the app
-```npm run serve```
+```
+npm run serve
+```
 > Remeber give access to Node.js use the local network
 
 * Open your web browser on 
-```localhost:8080```
+```
+localhost:8080
+```
 
 * Stop the web app with this combination keys
-```(Ctrl + C)```
+```
+(Ctrl + C)
+```
 
 ### 3. Configure the app to deploy
 * Access the root folder and build the app
-```npm run build```
+```
+npm run build
+```
 
 * Go to the generated folder `dist\` and create the empty file `staticfile` (without extension)
 * Go back to the root folder and create the file `manifest.yml` and edit it with following information
