@@ -1,49 +1,70 @@
-# Configurar una aplicación web de Vue para desplegarla en Cloud Foundry
+# Configure and deploy a Vue app web on Cloud Foundry
 
-Este tutorial te indicará como configurar una aplicación web de `Vue` para desplegarla en Cloud Foundry. 
+* Note:  If you download this repository, the app has all configuration files to deploy it but it is necessary do the step 4.
 
-* Nota: Al descargar este repositorio, la aplicación tendrá los archivos de configuración para el despliegue, pero es necesario que realices el paso 4.
+## Basic requirements
+* Command prompt like `Terminal` or `PowerShell`
+* Text editor like `Notepad++` or `Visual Studio Code`
 
-## Requisitos básicos
-* Ventana de comandos como `Terminal` o `PowerShell`
-* Editor de texto/código como `Notepad++` o `Visual Studio Code`
+### 1. Install Node.js and Vue
+* Install the latest version of [Node.js](https://nodejs.org/en/)
 
-### 1. Instalar Node.js y Vue
-* Instala la última versión de [Node.js](https://nodejs.org/en/)
-* Verifica la instalación de Node: `$ node --version`
-* Verifica la instalación de NPM: `$ npm --version`
-* Instala la última versión del CLI de Vue: `$ npm install -g @vue/cli`
-* Verifica la instalación de Vue: `$ vue --version`
+* Verify the Node.js installation
+```node --version```
 
-### 2. Crear y probar la aplicación web
-* Crea la aplicación web: `$ vue create vue-app`
-* Accede a la carpeta raíz de la aplicación: `$ cd vue-app`
-* Prueba la aplicación en localhost: `$ npm run serve`
-> Abre tu navegador web en `localhost:8080`
-* Detén la aplicación: `(Ctrl + C)`
+* Verify the NPM installation
+```npm --version```
 
-### 3. Configurar la aplicación para el despliegue
-Desde la carpeta raíz de la aplicación
-* Construye la aplicación: `$ npm run build`
-* Ingresa a la carpeta generada `dist\` y crea el archivo vacío sin extensión `staticfile`
-* Posiciónate de nuevo en la carpeta raíz del proyecto, crea el archivo `manifest.yml` y editalo con la siguiente información:
+* Install the lastest version of Vue CLI
+`npm install -g @vue/cli`
+
+* Verify the Vue version
+```vue --version```
+
+> If you can't see the Vue version on PowerShell, launch a PowerShell window run as an administrator and enter
+```Set-ExecutionPolicy Unrestricted```
+and finally verify the Vue version
+
+### 2. Create and check the web app
+* Create the web app
+```vue create vue-app```
+
+* Access the root folder of web app
+```cd vue-app```
+
+* Run the app
+```npm run serve```
+> Remeber give access to Node.js use the local network
+
+* Open your web browser on 
+```localhost:8080```
+
+* Stop the web app with this combination keys
+```(Ctrl + C)```
+
+### 3. Configure the app to deploy
+* Access the root folder and build the app
+```npm run build```
+
+* Go to the generated folder `dist\` and create the empty file `staticfile` (without extension)
+* Go back to the root folder and create the file `manifest.yml` and edit it with following information
 ```
 ---
 applications:
-- name: vue-app-<initials>-<date>
+- name: vue-app-<your-initials>-<date>
   memory: 64M
   buildpack: staticfile_buildpack
   path: dist/
 ```
 
-### 4. Colocar un nombre a la aplicación
-* Dentro del archivo `manifest.yml`, cambia el valor del atributo `- name` colocando un nombre **único**. Puedes usar la plantilla para colocar tus iniciales y la fecha de hoy.
+### 4. Put a name to your app
+* Edit `manifest.yml` file changing the value of `- name` atribute. Rember that this value should be **unique**. You can use the before template.
 
-## Links de referencia
+## Reference link
 * Deploying an Angular 6 Application to Cloud Foundry: https://dzone.com/articles/deploying-angular-6-application-to-cloud-foundry
 
-## Links de interés
-* Documentación de Vue.js: https://vuejs.org/
-* Documentación de Vue CLI: https://cli.vuejs.org/
-* Documentación de Cloud Foundry: https://docs.cloudfoundry.org/ 
-* Documentación sobre manifest.yml: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
+## Information links
+* Vue.js page: https://vuejs.org/
+* Vue CLI documentation: https://cli.vuejs.org/
+* Cloud Foundry page: https://docs.cloudfoundry.org/ 
+* manifest.yml documentation: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html

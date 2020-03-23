@@ -1,6 +1,6 @@
 ---
 applications:
-- name: vue-app-<initials>-<date>
+- name: vue-app-<your-initials>-<date>
   memory: 64M
   buildpack: staticfile_buildpack
-  path: dist
+  path: dist/
