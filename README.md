@@ -2,7 +2,7 @@
 
 **Note**: this repository has a Vue app with all necessary files to deploy it on cloud, but it is necessary do the step 4.
 
-## Recommended software
+## Required software
 * Command prompt like `Terminal` or `PowerShell`
 * Text editor like `Notepad++` or `Visual Studio Code`
 
