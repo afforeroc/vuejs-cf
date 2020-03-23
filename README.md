@@ -1,8 +1,8 @@
-# Configure a Vue app to deploy on Cloud Foundry
+# Create and configure a Vue app to deploy on Cloud Foundry
 
-* Note: this repository has an app with all necessary files to deploy it on cloud, but it is necessary do the step 4.
+**Note**: this repository has a Vue app with all necessary files to deploy it on cloud, but it is necessary do the step 4.
 
-## Basic requirements
+## Recommended software
 * Command prompt like `Terminal` or `PowerShell`
 * Text editor like `Notepad++` or `Visual Studio Code`
 
