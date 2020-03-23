@@ -1,4 +1,4 @@
-# Configure a Vue app web to deploy on Cloud Foundry
+# Configure a Vue app to deploy on Cloud Foundry
 
 * Note: this repository has an app with all necessary files to deploy it on cloud, but it is necessary do the step 4.
 
