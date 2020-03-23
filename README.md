@@ -35,13 +35,13 @@ Set-ExecutionPolicy Unrestricted
 ```
 and again verify the Vue version
 
-### 2. Create and check the web app
-* Create the web app
+### 2. Create and check the app
+* Create the app
 ```
 vue create vue-app
 ```
 
-* Access the root folder of web app
+* Access the root folder of app
 ```
 cd vue-app
 ```
@@ -57,7 +57,7 @@ npm run serve
 localhost:8080
 ```
 
-* Stop the web app with this combination keys
+* Stop the app with this combination keys
 ```
 (Ctrl + C)
 ```
