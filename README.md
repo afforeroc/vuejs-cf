@@ -1,6 +1,6 @@
-# Configure and deploy a Vue app web on Cloud Foundry
+# Configure a Vue app web to deploy on Cloud Foundry
 
-* Note:  If you download this repository, the app has all configuration files to deploy it but it is necessary do the step 4.
+* Note: this repository has an app with all necessary files to deploy it on cloud, but it is necessary do the step 4.
 
 ## Basic requirements
 * Command prompt like `Terminal` or `PowerShell`
@@ -29,11 +29,11 @@ npm install -g @vue/cli
 vue --version
 ```
 
-> If you can't see the Vue version on PowerShell, launch a PowerShell window run as an administrator and enter
+> If you can't see the Vue version on PowerShell, launch a PowerShell window as an administrator and enter this command
 ```
 Set-ExecutionPolicy Unrestricted
 ```
-and finally verify the Vue version
+and again verify the Vue version
 
 ### 2. Create and check the web app
 * Create the web app
@@ -50,7 +50,7 @@ cd vue-app
 ```
 npm run serve
 ```
-> Remeber give access to Node.js use the local network
+> Remember give access to Node.js to use the local network
 
 * Open your web browser on 
 ```
@@ -69,20 +69,20 @@ npm run build
 ```
 
 * Go to the generated folder `dist\` and create the empty file `staticfile` (without extension)
-* Go back to the root folder and create the file `manifest.yml` and edit it with following information
+* Go back to the root folder and create the file `manifest.yml` and edit it with following template
 ```
 ---
 applications:
-- name: vue-app-<your-initials>-<date>
+- name: vue-app-<initials>-<date>
   memory: 64M
   buildpack: staticfile_buildpack
   path: dist/
 ```
 
 ### 4. Put a name to your app
-* Edit `manifest.yml` file changing the value of `- name` atribute. Rember that this value should be **unique**. You can use the before template.
+* Edit `manifest.yml` file changing the value of `- name` atribute. The name that should be **unique** because it will used as part of url of app. You can use the previous template putting your initials and the today's date.
 
-## Reference link
+## Reference links
 * Deploying an Angular 6 Application to Cloud Foundry: https://dzone.com/articles/deploying-angular-6-application-to-cloud-foundry
 
 ## Information links
