@@ -86,7 +86,7 @@ applications:
 * Deploying an Angular 6 Application to Cloud Foundry: https://dzone.com/articles/deploying-angular-6-application-to-cloud-foundry
 
 ## Information links
-* Vue.js page: https://vuejs.org/
-* Vue CLI documentation: https://cli.vuejs.org/
-* Cloud Foundry page: https://docs.cloudfoundry.org/ 
-* manifest.yml documentation: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
+* Vue page: https://vuejs.org/
+* Vue CLI: https://cli.vuejs.org/
+* Cloud Foundry Documentation: https://docs.cloudfoundry.org/ 
+* Deploying with App Manifests: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
