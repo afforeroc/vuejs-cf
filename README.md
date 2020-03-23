@@ -33,7 +33,7 @@ vue --version
 ```
 Set-ExecutionPolicy Unrestricted
 ```
-and again verify the Vue version
+> and again verify the Vue version
 
 ### 2. Create and check the app
 * Create the app
