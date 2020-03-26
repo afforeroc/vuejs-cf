@@ -45,7 +45,12 @@ This tutorial was designed to be done on a personal computer. Most every steps r
   ```
   cd vue-app
   ```
-
+  
+  > If you downloaded the web app sample, you should install dependencies to run it.
+  ```
+  npm install
+  ```
+  
   **2.3** Run the app and open your favorite web browser (by default) on `localhost:4200`.
   > Remember give access to Node.js to use the local network 
   ```
