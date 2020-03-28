@@ -80,10 +80,10 @@ applications:
 3.4 The web app is configurated. Now, you can learn how to [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).
 
 ## Reference links
-* Deploying an Angular 6 Application to Cloud Foundry- https://dzone.com/articles/deploying-angular-6-application-to-cloud-foundry
+* [Deploying an Angular 6 Application to Cloud Foundry](https://dzone.com/articles/deploying-angular-6-application-to-cloud-foundry)
 
 ## Information links
-* Vue page- https://vuejs.org/
-* Vue CLI page- https://cli.vuejs.org/
-* Cloud Foundry Documentation: https://docs.cloudfoundry.org/ 
-* Deploying with App Manifests- https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
+* [Vue page](https://vuejs.org/)
+* [Vue CLI page](https://cli.vuejs.org/)
+* [Cloud Foundry Documentation](https://docs.cloudfoundry.org/) 
+* [Deploying with App Manifests](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html)
