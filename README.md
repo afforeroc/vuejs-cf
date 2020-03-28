@@ -64,7 +64,7 @@ npm run serve
 npm run build
 ```
 
-3.2  Go to `vue-app\dist\` folder and create `staticfile` file(empty and without file extension).
+3.2  Go to `vue-app\dist\` folder and create `staticfile` file (empty and without file extension).
 
 3.3 Go back to `vue-app\` folder and create `manifest.yml` file and edit it with following template. It is necessary change of value of `name` attribute and this should be **unique** because it will used as part of an **URL** where your app will deployed. For example, you can put your initials and today's date.
 > Text 
